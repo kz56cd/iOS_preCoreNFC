@@ -26,6 +26,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		E66EC8D31F97291600444F8E /* PreCoreNFC.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = PreCoreNFC.entitlements; sourceTree = "<group>"; };
 		E6AC34821F96FAC400DAA95C /* PreCoreNFC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PreCoreNFC.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E6AC34851F96FAC400DAA95C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E6AC34871F96FAC400DAA95C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -56,12 +57,20 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		E66EC8D41F97291700444F8E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		E6AC34791F96FAC400DAA95C = {
 			isa = PBXGroup;
 			children = (
 				E6AC34841F96FAC400DAA95C /* PreCoreNFC */,
 				E6AC34991F96FAC400DAA95C /* PreCoreNFCTests */,
 				E6AC34831F96FAC400DAA95C /* Products */,
+				E66EC8D41F97291700444F8E /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -77,6 +86,7 @@
 		E6AC34841F96FAC400DAA95C /* PreCoreNFC */ = {
 			isa = PBXGroup;
 			children = (
+				E66EC8D31F97291600444F8E /* PreCoreNFC.entitlements */,
 				E6AC34851F96FAC400DAA95C /* AppDelegate.swift */,
 				E6AC34871F96FAC400DAA95C /* ViewController.swift */,
 				E6AC34891F96FAC400DAA95C /* Main.storyboard */,
@@ -147,6 +157,14 @@
 					E6AC34811F96FAC400DAA95C = {
 						CreatedOnToolsVersion = 9.0;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.HealthKit = {
+								enabled = 0;
+							};
+							com.apple.Maps.iOS = {
+								enabled = 0;
+							};
+						};
 					};
 					E6AC34951F96FAC400DAA95C = {
 						CreatedOnToolsVersion = 9.0;
